@@ -17,7 +17,9 @@ export const personsSlice = createSlice({
       });
     },
     remove: (state, action) => {
-      state.person.filter((person) => person.id !== action.payload);
+      return {
+        person: state.person.filter((person) => person.id !== action.payload),
+      };
     },
   },
 });
