@@ -1,5 +1,5 @@
 import React from "react";
-import Persons from "./containers/Persons";
+import Persons from "./features/persons/Persons";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 

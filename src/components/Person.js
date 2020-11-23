@@ -10,33 +10,6 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { HighlightOff } from "@material-ui/icons";
 
-const useStyles = makeStyles({
-  paper: {
-    backgroundColor: "#8d52ac",
-    borderRadius: "1rem",
-    margin: "2rem 0",
-  },
-  avatar: {
-    width: "5rem",
-    height: "5rem",
-  },
-  button: {
-    borderRadius: "1rem",
-    color: "#121212",
-    backgroundColor: "#f796ae",
-    "&:hover": {
-      backgroundColor: "#f5b3c3",
-    },
-    padding: ".5rem 1rem",
-  },
-  text: {
-    color: "#fff",
-  },
-  textSecondary: {
-    color: "#c3c3c3",
-  },
-});
-
 export default function Person(props) {
   const classes = useStyles();
   return (
@@ -82,3 +55,30 @@ export default function Person(props) {
     </Paper>
   );
 }
+
+const useStyles = makeStyles({
+  paper: {
+    backgroundColor: "#8d52ac",
+    borderRadius: "1rem",
+    margin: "2rem 0",
+  },
+  avatar: {
+    width: "5rem",
+    height: "5rem",
+  },
+  button: {
+    borderRadius: "1rem",
+    color: "#121212",
+    backgroundColor: "#f796ae",
+    "&:hover": {
+      backgroundColor: "#f5b3c3",
+    },
+    padding: ".5rem 1rem",
+  },
+  text: {
+    color: "#fff",
+  },
+  textSecondary: {
+    color: "#c3c3c3",
+  },
+});
