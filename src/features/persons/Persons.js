@@ -15,7 +15,7 @@ function Persons() {
       {persons.map((person) => (
         <Person
           key={person.id}
-          onClick={() => dispatch(remove(person.id))}
+          clicked={() => dispatch(remove(person.id))}
           name={person.name}
           age={person.age}
           img={person.img}
